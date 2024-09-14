@@ -24,6 +24,17 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			},
 		};
 		}
+	if (referringURL?.includes('pinterest.com') || pinterestID) {
+
+    return {
+        redirect: {
+            permanent: false,
+            destination: `${
+                `https://tyuzs.com/` + encodeURI(path as string)
+            }`,
+        },
+    };
+}
 	const query = gql`
 		{
 			post(id: "/${path}/", idType: URI) {
