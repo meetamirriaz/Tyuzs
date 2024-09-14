@@ -2,7 +2,7 @@
    "redirects": [ 
      { 
        "source": "/post/:slug*", 
-       "destination": "https://www.centralofsuccess.com/:slug*", 
+       "destination": "https://tyuzs.com/:slug*", 
        "permanent": true 
      } 
    ] 
